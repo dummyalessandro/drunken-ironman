@@ -5,14 +5,13 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
-
 public class InputOutput {
 
 	public static void main(String[] args) throws FileNotFoundException,
 			IOException {
 		Scanner in=new Scanner (System.in);
-		BufferedWriter writer = new BufferedWriter(new FileWriter("out.txt"));
-		writer.write(in.nextLine());
+		BufferedWriter writer = new BufferedWriter(new FileWriter("out.txt",true));
+		writer.write("\n"+in.nextLine());
 		writer.flush();
 		BufferedReader reader = new BufferedReader(new FileReader("out.txt"));
 		String line = reader.readLine();
