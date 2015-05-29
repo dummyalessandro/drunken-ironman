@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class CreateTable {
 	//JDBC driver name and database URL
 	static final String JDBC_DRIVER= "com.mysql.jdbc.Driver";
-	static final String DB_URL="jdbc:mysql://localhost/sample";
+	static final String DB_URL="jdbc:mysql://192.168.1.134/sample";
 	//Database Credentilas
 	static final String USER="Corso";
 	static final String PASS="12345";
@@ -36,7 +36,7 @@ public class CreateTable {
 			String sql2="SELECT Cognome,Nome,Eta FROM impiegato WHERE Cognome = ? AND Eta =?";
 			PreparedStatement ps=conn.prepareStatement(sql2);
 			ps.setString(1, in.nextLine());
-			ps.setInt(1, in.nextInt());
+			ps.setInt(2, in.nextInt());
 			ResultSet resultset=ps.executeQuery();
 			while(resultset.next()){
 				String Cognome = resultset.getString("Cognome");
