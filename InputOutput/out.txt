@@ -2,3 +2,7 @@ Viva Marsala
 Trapani Merda
 Daenerys Targarien è bona
 ma pure i fimmine di dorn un su male
+di sto passo manco arriviamo a fare hello world come web application....
+altro che servlet o java spring....
+12
+13
